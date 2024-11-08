@@ -9,7 +9,7 @@
 		if($user_id){
 			$session->login($user_id);
 			updateLastLogIn($user_id);
-			$session->msg("s","Bienvenido a larause.");
+			$session->msg("s","Bienvenido a Global.");
 			redirect('home.php',false);
 		}else{
 			$session->msg("d","Nombre de usuario y/o contraseña incorrectos.");

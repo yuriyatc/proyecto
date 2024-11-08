@@ -10,13 +10,13 @@
 			$session->login($user['id']);
 			updateLastLogIn($user['id']);
 			if($user['user_level']==='1'):
-				$session->msg("s","Hola ".$user['username'].", bienvenido a larause.");
+				$session->msg("s","Hola ".$user['username'].", bienvenido a Global.");
 				redirect('admin.php',false);
 			elseif($user['user_level']==='2'):
-				$session->msg("s","Hola ".$user['username'].", bienvenido a larause.");
+				$session->msg("s","Hola ".$user['username'].", bienvenido a Global.");
 				redirect('special.php',false);
 			else:
-				$session->msg("s","Hola ".$user['username'].", bienvenido a larause.");
+				$session->msg("s","Hola ".$user['username'].", bienvenido a Global.");
 				redirect('home.php',false);
 			endif;
         else:

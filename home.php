@@ -105,7 +105,7 @@
 						<div class="div-square">
 							<a href="salary.php">
 								<img src="libs/images/salary.jpg" alt="nominas">
-								<h4>Nominas</h4>
+								<h4>Pagos empleados</h4>
 							</a>
 						</div>
 					</div>

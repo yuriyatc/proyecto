@@ -27,7 +27,7 @@
 						<tr>
 							<th class="text-center" style="width: 50px;">#</th>
 							<th>Nombre del grupo</th>
-							<th class="text-center" style="width: 20%;">Nivel del grupo</th>
+							<th class="text-center" style="width: 20%;">Nivel del cargo</th>
 							<th class="text-center" style="width: 15%;">Estado</th>
 							<th class="text-center" style="width: 100px;">Acciones</th>
 						</tr>

@@ -52,7 +52,7 @@
             <input type="name" class="form-control" name="group-name" required>
         </div>
         <div class="form-group">
-            <label for="level" class="control-label">Nivel del grupo</label>
+            <label for="level" class="control-label">Nivel del cargo</label>
             <input type="number" class="form-control" name="group-level">
         </div>
         <div class="form-group">

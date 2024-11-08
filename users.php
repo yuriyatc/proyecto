@@ -26,8 +26,8 @@
 					<thead>
 						<tr>
 							<th class="text-center" style="width: 50px;">#</th>
-							<th>Nombre</th>
-							<th>Usuario</th>
+							<th>Cargo</th>
+							<th>Usuario Acceso</th>
 							<th class="text-center" style="width: 15%;">Rol de usuario</th>
 							<th class="text-center" style="width: 10%;">Estado</th>
 							<th style="width: 20%;">Último login</th>

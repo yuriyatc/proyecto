@@ -32,7 +32,7 @@
 							<th class="text-center" style="width: 50px;">#</th>
 							<th class="text-center">Direccion</th>
 							<th class="text-center" style="width: 10%;">Código Postal</th>
-							<th class="text-center" style="width: 10%;">Población</th>
+							<th class="text-center" style="width: 10%;">Ciudad</th>
 							<th class="text-center" style="width: 10%;">Empleado</th>
 							<th class="text-center" style="width: 10%;">Metros Cuadrados</th>
 							<th class="text-center" style="width: 10%;">Alquiler</th>

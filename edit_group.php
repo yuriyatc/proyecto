@@ -51,7 +51,7 @@
             <input type="name" class="form-control" name="group-name" value="<?php echo remove_junk(ucwords($e_group['group_name'])); ?>">
         </div>
         <div class="form-group">
-            <label for="level" class="control-label">Nivel del grupo</label>
+            <label for="level" class="control-label">Nivel del cargo</label>
             <input type="number" class="form-control" name="group-level" value="<?php echo (int)$e_group['group_level']; ?>">
         </div>
         <div class="form-group">

@@ -195,7 +195,7 @@
 										<span class="input-group-addon">
 											<i class="glyphicon glyphicon-list-alt"></i>
 										</span>
-										<input type="text" class="form-control" name="titulacion" placeholder="Profecion">
+										<input type="text" class="form-control" name="titulacion" placeholder="Profesion">
 									</div>
 								</div>
 							</div>

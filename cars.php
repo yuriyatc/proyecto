@@ -31,7 +31,7 @@
 						<tr>
 							<th class="text-center" style="width: 50px;">#</th>
 							<th>Marca y modelo</th>
-							<th class="text-center" style="width: 10%;">Población</th>
+							<th class="text-center" style="width: 10%;">Ciudad</th>
 							<th class="text-center" style="width: 10%;">Empleado</th>
 							<th class="text-center" style="width: 10%;">Matrícula</th>
 							<th class="text-center" style="width: 10%;">Estado</th>

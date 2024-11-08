@@ -77,7 +77,7 @@
 			<div class="panel-body">
 				<form method="post" action="edit_user.php?id=<?php echo (int)$e_user['id']; ?>" class="clearfix">
 					<div class="form-group">
-						<label for="name" class="control-label">Nombres</label>
+						<label for="name" class="control-label">Cargo</label>
 						<input type="name" class="form-control" name="name" value="<?php echo remove_junk(ucwords($e_user['name'])); ?>">
 					</div>
 					<div class="form-group">

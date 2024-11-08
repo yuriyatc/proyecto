@@ -84,13 +84,13 @@
 								<span class="input-group-addon">
 									<i class="glyphicon glyphicon-home"></i>
 								</span>
-								<input type="text" class="form-control" name="poblacion" placeholder="Población" value="<?php echo remove_junk($supplier['poblacion']); ?>">
+								<input type="text" class="form-control" name="poblacion" placeholder="Ciudad" value="<?php echo remove_junk($supplier['poblacion']); ?>">
 							</div>
 							<div class="col-md-6">
 								<span class="input-group-addon">
 									<i class="glyphicon glyphicon-flag"></i>
 								</span>
-								<input type="text" class="form-control" name="estado" placeholder="Estado" value="<?php echo remove_junk($supplier['estado']); ?>">
+								<input type="text" class="form-control" name="estado" placeholder="Barrio" value="<?php echo remove_junk($supplier['estado']); ?>">
 							</div>
 						</div>
 					</div>

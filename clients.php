@@ -32,8 +32,8 @@
 							<th class="text-center" style="width:50px;">#</th>
 							<th>Nombre</th>
 							<th class="text-center" style="width:10%;">Dirección</th>
-							<th class="text-center" style="width:10%;">Población</th>
-							<th class="text-center" style="width:10%;">Estado</th>
+							<th class="text-center" style="width:10%;">Ciudad</th>
+							<th class="text-center" style="width:10%;">Barrio</th>
 							<th class="text-center" style="width:10%;">Teléfono</th>
 							<th class="text-center" style="width:10%;">Descripción</th>
 							<th class="text-center" style="width:10%;">Fecha inicio</th>

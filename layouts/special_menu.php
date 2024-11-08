@@ -60,7 +60,7 @@
 	<li>
 		<a href="media.php">
 			<i class="glyphicon glyphicon-picture"></i>
-			<span>Media</span>
+			<span>Imagenes</span>
 		</a>
 	</li>
 	<li>
@@ -124,7 +124,7 @@
 	<li>
 		<<a href="salary.php">
 			<i class="glyphicon glyphicon-usd"></i>
-			<span>Nóminas</span>
+			<span>Pagos empleados</span>
 		</a>
 	</li>
 	<li>

@@ -19,10 +19,10 @@
 			<div class="panel-heading clearfix">
 				<strong>
 					<span class="glyphicon glyphicon-th"></span>
-					<span>Todas las nóminas</span>
+					<span>Todos los pagos </span>
 				</strong>
 				<div class="pull-right">
-					<a href="add_salary.php" class="btn btn-primary">Agregar nómina</a>
+					<a href="add_salary.php" class="btn btn-primary">Agregar pago </a>
 				</div>
 			</div>
 			<div class="panel-body">

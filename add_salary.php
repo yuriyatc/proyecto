@@ -54,7 +54,7 @@
 			<div class="panel-heading">
 				<strong>
 					<span class="glyphicon glyphicon-th"></span>
-					<span>Agregar nómina</span>
+					<span>Agregar Pago</span>
 				</strong>
 			</div>
 			<div class="panel-body">
@@ -129,7 +129,7 @@
 								</div>
 							</div>
 						</div>
-						<button type="submit" name="add_salary" class="btn btn-danger" style="margin-left:100px">Agregar nómina</button>
+						<button type="submit" name="add_salary" class="btn btn-danger" style="margin-left:100px">Agregar Pago</button>
 						<button type="submit" name="back" class="btn btn-primary" style="margin-left:400px">Volver atras</button>
 					</form>
 				</div>

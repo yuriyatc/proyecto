@@ -75,7 +75,7 @@
 								<span class="input-group-addon">
 									<i class="glyphicon glyphicon-map-marker"></i>
 								</span>
-								<input type="text" class="form-control" name="poblacion" placeholder="Población" value="<?php echo remove_junk($car['poblacion']); ?>">
+								<input type="text" class="form-control" name="poblacion" placeholder="Ciudad" value="<?php echo remove_junk($car['poblacion']); ?>">
 							</div>
 							<div class="col-md-6">
 								<span class="input-group-addon">

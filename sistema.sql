@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-10-2024 a las 21:44:42
+-- Tiempo de generación: 30-10-2024 a las 21:29:33
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.0.28
 
@@ -61,6 +61,7 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `name`) VALUES
+(4, 'cosmeticos'),
 (2, 'LÃ­quidos'),
 (3, 'Portatil');
 
@@ -146,7 +147,7 @@ CREATE TABLE `materials` (
 INSERT INTO `materials` (`id`, `nombre`, `descripcion`, `cantidad`, `fecha_compra`, `precio_compra`) VALUES
 (2, 'MÃ¡quina de envasado al vacÃ­o', 'Envasadora Mackinley 40023A 8l', 1, '2020-02-20', 123.45),
 (3, 'Cortadora', 'Modelo L400', 2, '2020-08-12', 59.99),
-(4, 'Caja registradora', 'Fort500', 1, '2001-01-01', 49.90);
+(4, 'Caja registradora', '', 1, '2001-01-01', 999.99);
 
 -- --------------------------------------------------------
 
@@ -191,7 +192,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `quantity`, `buy_price`, `sale_price`, `categorie_id`, `media_id`, `date`, `id_supplier`) VALUES
-(2, 'Garrafa de 5 litros de agua carbonatada', '51', 500000.00, 7.00, 2, 3, '2020-08-11 20:09:32', 1);
+(2, 'Garrafa de 5 litros de agua carbonatada', '53', 500000.00, 7.00, 2, 3, '2020-08-11 20:09:32', 1);
 
 -- --------------------------------------------------------
 
@@ -203,8 +204,8 @@ CREATE TABLE `purchases` (
   `id` int(11) UNSIGNED NOT NULL,
   `product_id` int(11) UNSIGNED NOT NULL,
   `qty` int(11) NOT NULL,
-  `price` decimal(5,2) NOT NULL,
-  `total` decimal(5,2) NOT NULL,
+  `price` int(11) NOT NULL,
+  `total` int(11) NOT NULL,
   `date` date NOT NULL,
   `supplier` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
@@ -214,8 +215,8 @@ CREATE TABLE `purchases` (
 --
 
 INSERT INTO `purchases` (`id`, `product_id`, `qty`, `price`, `total`, `date`, `supplier`) VALUES
-(1, 1, 1, 5.00, 5.00, '2020-07-25', 1),
-(2, 2, 1, 999.99, 3.50, '2020-08-11', 1);
+(1, 1, 1, 5, 5, '2020-07-25', 1),
+(2, 2, 2, 500000, 500000, '2020-08-11', 1);
 
 -- --------------------------------------------------------
 
@@ -263,7 +264,7 @@ CREATE TABLE `sales` (
 --
 
 INSERT INTO `sales` (`id`, `product_id`, `qty`, `price`, `total`, `date`, `client`) VALUES
-(2, 2, 1, 7.00, 7.00, '2020-08-11', 1);
+(2, 2, 2, 999.99, 999.99, '2020-08-11', 1);
 
 -- --------------------------------------------------------
 
@@ -336,11 +337,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `username`, `password`, `user_level`, `image`, `status`, `last_login`) VALUES
-(1, 'Andres Casas', 'Admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 1, '50b8fzt1.jpg', 1, '0000-00-00 00:00:00'),
-(2, 'Usuario Especial', 'special', '942078ca2d04f25545a316c123a392c4d5d339fd', 2, 'wuqrvc6z2.jpg', 1, '0000-00-00 00:00:00'),
-(3, 'Usuario Normal', 'user', '9f8a2389a20ca0752aa9e95093515517e90e194c', 3, '1tvxj5493.jpg', 1, '0000-00-00 00:00:00'),
-(5, 'Bodega', 'bodega', '12345', 1, 'sjsdjd', 1, NULL),
-(6, 'Almacen', 'Almacen', '7a68289bc1a81b36614792763bf656741c474b7e', 2, 'no_image.jpg', 1, NULL);
+(1, 'Administrador Maquila', 'Admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 1, '50b8fzt1.jpg', 1, '0000-00-00 00:00:00'),
+(2, 'Lider Almacén', 'Lider', 'a374ab25015014aa0f2a40745ff9a82549b11149', 2, 'wuqrvc6z2.jpg', 1, '0000-00-00 00:00:00'),
+(3, 'Auxiliar', 'Auxiliar', 'b9d7a10f2bc0e34d6840fa4a28ab151f90f53c98', 3, '1tvxj5493.jpg', 1, '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -360,9 +359,9 @@ CREATE TABLE `user_groups` (
 --
 
 INSERT INTO `user_groups` (`id`, `group_name`, `group_level`, `group_status`) VALUES
-(1, 'Administrador', 1, 1),
-(2, 'Bodegero', 2, 1),
-(3, 'Auxiliar', 3, 1);
+(1, 'ADMINISTRADOR', 1, 1),
+(2, 'LIDER', 2, 1),
+(3, 'AUXILIAR', 3, 1);
 
 --
 -- Índices para tablas volcadas
@@ -481,7 +480,7 @@ ALTER TABLE `cars`
 -- AUTO_INCREMENT de la tabla `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `clients`
